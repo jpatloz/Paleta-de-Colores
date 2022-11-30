@@ -8,10 +8,12 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormAlumnoComponent } from './vistas/form-alumno/form-alumno.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormAlumnoComponent
   ],
   imports: [
     BrowserModule,

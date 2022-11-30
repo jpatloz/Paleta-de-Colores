@@ -26,17 +26,17 @@ export class AlumnosService {
 
   //Nuevo alumno
   newAlumno(documendId: string, alumno: Alumno){
-
+    return this.firebase.collection(this.miColeccion).add(alumno);
   }
 
   //Actualiza alumno
   updateAlumno(documentId: string, alumno: Alumno){
-
+    return this.firebase.collection(this.miColeccion).doc(documentId).update(alumno);
   }
 
   //Borra alumno
   deleteAlumno(documentId: string){
-
+    return this.firebase.collection(this.miColeccion).doc(documentId).delete();
   }
 
 }
