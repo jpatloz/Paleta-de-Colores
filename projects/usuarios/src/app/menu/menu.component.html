@@ -1,0 +1,12 @@
+<ul ngbNav="ngbNav" class="new-tabs"></ul>
+<li ngbNavItem>
+  <a ngbNavLink>Usuarios</a>
+  <ng-template ngbNavContent ><app-lista-usuarios></app-lista-usuarios></ng-template>
+</li>
+
+<li ngbNavItem>
+  <a ngbNavLink>Nuevo Usuario</a>
+  <ng-template ngbNavContent ><app-form-usuarios></app-form-usuarios></ng-template>
+</li>
+
+<div [ngbNavOutlet]="nav"></div>
